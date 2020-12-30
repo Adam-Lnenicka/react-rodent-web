@@ -19,7 +19,7 @@ export default function Home() {
           return data
       }else if (data.name.toLowerCase().includes(searchTerm.toLowerCase())){
           return data
-      }
+      }return null
   }).slice(0, page).map((data)=>{
       return(
         <Card   key={data.id} 
